@@ -135,7 +135,7 @@ body{
 }
 .acquaintance-section__button {
     position: absolute;
-    bottom: 120px; /* відступ від нижнього краю */
+    bottom: 170px; /* відступ від нижнього краю */
     left: 50%;
     transform: translateX(-50%);
     display: block;
