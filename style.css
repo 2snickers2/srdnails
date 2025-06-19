@@ -1,12 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    /* height: 100%; */
 
 }
 body{
     background: linear-gradient(#000000, #300000 30%);
     font-family: 'Montserrat', sans-serif;
     color: #FFF;
+    height: 100%;
 }
 .container{
     width: 100%;
@@ -136,7 +138,7 @@ body{
     bottom: 120px; /* відступ від нижнього краю */
     left: 50%;
     transform: translateX(-50%);
-    
+    display: block;
     width: 90%;
     border: none;
     background-color: #000000;
