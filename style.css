@@ -107,7 +107,8 @@ body{
 }
 .acquaintance-section__contacts{
     text-align: left;
-    margin-top: 100px;
+    position: absolute;
+    top: 220px;
 }
 .acquaintance-section__icon{
     width: 20px;
@@ -130,18 +131,18 @@ body{
     left: 40%;
     transform: rotate(306deg); 
 }
-.acquaintance-section__button{
+.acquaintance-section__button {
+    position: absolute;
+    bottom: 120px; /* відступ від нижнього краю */
+    left: 50%;
+    transform: translateX(-50%);
+    
     width: 90%;
     border: none;
-    margin: 0 auto;
     background-color: #000000;
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
     padding: 10px;
-    border-radius: 10px;    
-    position: absolute;
-    bottom: 120px;
-    left: 0;
-    right: 0;
-  
+    border-radius: 10px;
 }
+
