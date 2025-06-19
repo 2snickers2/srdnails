@@ -147,4 +147,11 @@ body{
     padding: 10px;
     border-radius: 10px;
 }
+.metal2{
+    width: 130px;
+    position: absolute;
+    right: 230px;
+    bottom: 90px;
+    transform: rotate(45deg);
 
+}
