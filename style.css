@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: linear-gradient(#000000, #300000 30%);
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+}
+.container{
+    width: 100%;
+    /* max-width: 320px; */
+    height: 100vh;
+    position: relative;
+     overflow: hidden;
+
+}
+.header__menu{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+.header__img{
+    width: 60px;
+    border-radius: 50%;
+}
+.header__name{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-left: 15px;
+}
+.header__button{
+    width: 35px;
+    height: 20px;
+    background: none;
+    border: none;
+    background-image: url(img/menu-close.png);
+    background-size: contain;
+    cursor: pointer;
+}
+.acquaintance-section{
+    position: relative;
+    text-align: center;
+    height: 100vh;
+   
+    
+}
+.acquaintance-section__name{
+    font-weight: 400;
+    margin-top: 20px;
+}
+.acquaintance-section__inform{
+    margin: 10px;
+    font-weight: 300;
+}
+.acquaintance-section__hand{
+    position: absolute;
+    right: 0;
+}
+.acquaintance-section__circle{
+    width: 250px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: #000000;
+    margin-left: 50%;
+}
+
+.acquaintance-section__nails{
+    position: absolute;
+    width: 150px;
+    transform: rotate(30deg);
+    bottom: 70px;
+    right: -20px;
+}
+.circle-text {
+    width: 250px;
+    height: 230px;
+    border-radius: 50%;
+    position: absolute;
+    left: 44%;
+}
+
+.circle-text span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    font-family: "Yeseva One", serif;
+    color: #B0B0B0;
+    font-size: 18px;
+    white-space: nowrap;
+    letter-spacing: 2px;
+}
+
+@keyframes rotate {
+    100% {
+    transform: rotate(360deg);
+    }
+}
+.acquaintance-section__contacts{
+    text-align: left;
+    margin-top: 100px;
+}
+.acquaintance-section__icon{
+    width: 20px;
+    padding: 5px 10px;
+}
+.acquaintance-section__item{
+    display: flex;
+    align-items: center;
+}
+.acquaintance-section__link{
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 14px;
+}
+.metal{
+  width: 50px; 
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: rotate(306deg); 
+}
+.acquaintance-section__button{
+    width: 90%;
+    border: none;
+    margin: 0 auto;
+    background-color: #000000;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    border-radius: 10px;    
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    right: 0;
+  
+}
