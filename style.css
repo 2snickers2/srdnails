@@ -168,7 +168,7 @@ body{
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background: url(../img/avatar.png) no-repeat;
+    background: url(img/avatar.png) no-repeat;
     background-size: 100px;
     background-color: #000000c7;
     box-shadow: 0 0 80px 40px#000000;
