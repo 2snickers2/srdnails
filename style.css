@@ -202,6 +202,6 @@ body{
     justify-items: center;
 }
 .gallery-section__nails-foto{
-    width: 99px;
-    height: 110px;
+    width: 100%;
+    height: 150px;
 }
