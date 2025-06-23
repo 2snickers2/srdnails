@@ -5,7 +5,7 @@
 
 }
 body{
-    background: linear-gradient(#000000, #300000 30%);
+  
     font-family: 'Montserrat', sans-serif;
     color: #FFF;
     height: 100%;
@@ -15,11 +15,12 @@ body{
     /* max-width: 320px; */
     height: 100vh;
     position: relative;
-     overflow: hidden;
+
 
 }
 .header__menu{
     display: flex;
+    background-color: #000000;
     padding: 10px;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +53,8 @@ body{
     position: relative;
     text-align: center;
     height: 100vh;
-   
+    overflow: hidden;
+    background: linear-gradient(#000000, #300000 30%);
     
 }
 .acquaintance-section__name{
@@ -135,7 +137,7 @@ body{
 }
 .acquaintance-section__button {
     position: absolute;
-    bottom: 170px; /* відступ від нижнього краю */
+    bottom: 170px; 
     left: 50%;
     transform: translateX(-50%);
     display: block;
@@ -154,4 +156,52 @@ body{
     bottom: 90px;
     transform: rotate(45deg);
 
+}
+.gallery-section{
+    position: relative;
+    background: linear-gradient(#300000, #000000 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-section__avatar{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: url(/img/avatar.png) no-repeat;
+    background-size: 100px;
+    background-color: #000000c7;
+    box-shadow: 0 0 80px 40px#000000;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+}
+.gallery-section__metal-stars{
+    width: 60px;
+    box-shadow: 0;
+    position: relative;
+    bottom: 58px;
+    right: 50px;
+    z-index: 2;
+}
+.gallery-section__text{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px;text-align: center;
+}
+.gallery-section__nails{
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 5px;
+    background: linear-gradient(#300000, #000000 30%);
+    justify-items: center;
+}
+.gallery-section__nails-foto{
+    width: 99px;
+    height: 110px;
 }
