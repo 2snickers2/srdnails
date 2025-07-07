@@ -1,0 +1,53 @@
+.section-processing{
+     background: linear-gradient(#000000, #300000,#000000 100%);
+     
+}
+
+.section-processing__name{
+     font-family: "Yeseva One", serif;
+     font-size: 30px;
+     font-weight: 300;
+     text-align: center;
+     letter-spacing: 2px;
+}
+.section-processing__subtext{
+     margin: 30px 10px;
+     font-size: 14px;
+     text-align: justify;
+     
+}
+.section-processing__inform{
+     display: flex;
+     justify-content: space-between;
+     margin-top: 30px;
+}
+.section-processing__inform-text{
+     font-size: 13px;
+     display: flex;
+     align-items: center;
+     padding: 0 5px;
+}
+.section-processing__inform-img{
+     width: 100px;
+     filter: drop-shadow(4px 40px 30px rgb(9, 9, 9));
+}
+/* .section-processing__inform-shadow{
+     height: 50px;
+     border-radius: 50%;
+     box-shadow: 0 0 40px 20px#000000;
+     background-color: #000000;
+} */
+.section-processing__inform-reverse{
+     flex-direction: row-reverse;
+     text-align: right;
+}
+.section-processing__subtext-stars{
+     width: 50px;
+     position: relativa;
+     top: -30px;
+}
+.metal-stars__bottom{
+     width: 50px;
+     position: relative;
+     left: 70%;
+}
