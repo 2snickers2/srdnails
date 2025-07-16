@@ -1,0 +1,84 @@
+.section-prace{
+    background: linear-gradient(var(--color-burgundy), var(--color-dark) 90%);
+
+    
+    &__name{
+    font-family: "Yeseva One", serif;
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+    z-index: 2;
+        
+    }   
+    &__circle{
+    background-size: 40px;
+    background-color: #000000b1;
+    box-shadow: 0 0 40px 20px var(--color-dark);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 70px;
+    bottom: 0;
+    z-index: -1;
+    }
+    &__list{
+    margin-top: 30px;
+    }
+    &_list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: relative;
+    padding: 10px 5px;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+    }
+    &__white-space{
+        white-space: wrap;
+    }
+
+    &__item span:first-child {
+    position: relative;
+    padding-right: 10px;
+    }
+
+    &__line {
+
+    width: 100%;
+    border-bottom: 1px solid var(--color-light);
+    transform: translateY(-50%);
+    margin-left: 5px;
+    }
+
+    &__item span:last-child {
+    white-space: nowrap;
+    padding-left: 10px;
+    }
+    
+    &__nail-long{
+        width: 200px;
+        height: 250px;
+        background: url(../img/nail-long.png);
+        background-size: cover;
+        margin: 0 auto;
+    }
+    &__stars{
+        position: absolute;
+        width: 50px;
+        top: 85%;
+        left: 80%;
+    }
+    
+}
+
+
+
+

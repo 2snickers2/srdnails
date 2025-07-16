@@ -1,0 +1,41 @@
+.section-contacts{
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(var(--color-dark), var(--color-burgundy) 70%);
+
+    &__metal{
+    position: absolute;
+    width: 100px;
+    z-index: 1;
+    right: -20px;
+    transform: rotate(314deg);
+}
+}
+.section-name{
+    font-family: "Yeseva One", serif;
+    font-weight: 500;
+    margin-left: 10px;
+    text-align: center;
+}
+.section-contacts{
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(#000000, #300000 70%);
+}
+.section-list{
+    position: relative;
+    padding: 20px;
+}
+.section-item{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+.section-link{
+    text-decoration: none;
+    color: #FFF;
+}
+.section-icon{
+    width: 25px;
+    margin-right: 10px;
+}

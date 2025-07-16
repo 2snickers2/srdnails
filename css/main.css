@@ -1,0 +1,577 @@
+@charset "UTF-8";
+:root {
+  --color-light: #FFF;
+  --color-dark: #000000;
+  --color-burgundy: #300000;
+}
+
+body {
+  color: var(--color-light);
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+a {
+  display: inline-block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header__menu {
+  display: flex;
+  background-color: var(--color-dark);
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu-red {
+  background-color: var(--color-burgundy);
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__img {
+  width: 60px;
+  border-radius: 50%;
+}
+.header__name {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-left: 15px;
+}
+.header__nav {
+  background-color: var(--color-burgundy);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  padding-top: 50px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+.header__nav.active {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+.header__nav-list {
+  list-style-type: none;
+  text-decoration: none; /* добавить в основной scss*/
+}
+.header__button {
+  width: 30px;
+  height: 20px;
+  background: none;
+  border: none;
+  background-image: url(../../img/menu-close.png);
+  background-size: contain;
+  cursor: pointer;
+}
+.header__close {
+  background: url(../../img/close-btn.png) no-repeat;
+  background-size: contain;
+  /* background: none; */
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  background-size: contain;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+.header__nav-link {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 18px;
+  margin: 20px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.footer {
+  background-color: var(--color-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.footer__logo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+.footer__img {
+  width: 50px;
+  border-radius: 50%;
+}
+.footer__adresses {
+  display: flex;
+  justify-content: space-between;
+  border-left: 1px solid var(--color-light);
+}
+.footer__name {
+  font-weight: 500;
+  margin-left: 10px;
+}
+.footer__adresses-list {
+  display: flex;
+  list-style-type: none;
+}
+.footer__adresses-link {
+  cursor: pointer;
+}
+.footer__icon {
+  width: 20px;
+  margin-left: 10px;
+}
+.footer__copyright {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.5333333333);
+}
+
+.section-map {
+  display: grid;
+  position: relative;
+  background: linear-gradient(var(--color-burgundy), var(--color-dark) 90%);
+}
+.section-map__adress {
+  margin: 0 auto;
+  width: 90%;
+  height: 150px;
+  border-radius: 10px;
+}
+.section-map__metal {
+  position: absolute;
+  width: 100px;
+  z-index: 1;
+  right: -20px;
+  transform: rotate(314deg);
+}
+
+.section-contacts {
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(var(--color-dark), var(--color-burgundy) 70%);
+}
+.section-contacts__metal {
+  position: absolute;
+  width: 100px;
+  z-index: 1;
+  right: -20px;
+  transform: rotate(314deg);
+}
+
+.section-name {
+  font-family: "Yeseva One", serif;
+  font-weight: 500;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.section-contacts {
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(#000000, #300000 70%);
+}
+
+.section-list {
+  position: relative;
+  padding: 20px;
+}
+
+.section-item {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+}
+
+.section-link {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.section-icon {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.section-prace {
+  background: linear-gradient(var(--color-burgundy), var(--color-dark) 90%);
+}
+.section-prace__name {
+  font-family: "Yeseva One", serif;
+  font-size: 30px;
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+  z-index: 2;
+}
+.section-prace__circle {
+  background-size: 40px;
+  background-color: rgba(0, 0, 0, 0.6941176471);
+  box-shadow: 0 0 40px 20px var(--color-dark);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  left: 70px;
+  bottom: 0;
+  z-index: -1;
+}
+.section-prace__list {
+  margin-top: 30px;
+}
+.section-prace_list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.section-prace__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: relative;
+  padding: 10px 5px;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.section-prace__white-space {
+  white-space: wrap;
+}
+.section-prace__item span:first-child {
+  position: relative;
+  padding-right: 10px;
+}
+.section-prace__line {
+  width: 100%;
+  border-bottom: 1px solid var(--color-light);
+  transform: translateY(-50%);
+  margin-left: 5px;
+}
+.section-prace__item span:last-child {
+  white-space: nowrap;
+  padding-left: 10px;
+}
+.section-prace__nail-long {
+  width: 200px;
+  height: 250px;
+  background: url(../img/nail-long.png);
+  background-size: cover;
+  margin: 0 auto;
+}
+.section-prace__stars {
+  position: absolute;
+  width: 50px;
+  top: 85%;
+  left: 80%;
+}
+
+.section-processing {
+  background: linear-gradient(var(--color-dark), var(--color-burgundy), var(--color-dark) 100%);
+}
+.section-processing__name {
+  font-family: "Yeseva One", serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.section-processing__subtext {
+  margin: 30px 10px;
+  font-size: 14px;
+  text-align: justify;
+}
+.section-processing__inform {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.section-processing__inform-text {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+.section-processing__inform-img {
+  width: 100px;
+  filter: drop-shadow(4px 40px 30px var(--color-dark));
+}
+.section-processing__inform-reverse {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.section-processing__subtext-stars {
+  width: 50px;
+  position: relativa;
+  top: -30px;
+}
+.section-processing__stars-bottom {
+  width: 50px;
+  position: relative;
+  left: 70%;
+}
+
+.section-materials {
+  background: linear-gradient(var(--color-dark), var(--color-burgundy) 10%, var(--color-dark) 100%);
+}
+.section-materials__name {
+  font-family: "Yeseva One", serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.section-materials__subtext {
+  margin: 30px 10px;
+  font-size: 14px;
+  text-align: justify;
+}
+.section-materials__gallery {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 5px;
+}
+.section-materials__gallery-item {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.section-materials__foto {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-materials__foto-small {
+  height: 200px;
+}
+.section-materials__metal {
+  position: absolute;
+  top: 40px;
+  left: -36px;
+  right: 23px;
+  width: 70px;
+  transform: rotate(322deg);
+}
+
+.acquaintance-section {
+  position: relative;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(var(--color-dark), var(--color-burgundy) 30%);
+}
+.acquaintance-section__name {
+  font-weight: 400;
+  margin-top: 20px;
+}
+.acquaintance-section__inform {
+  margin: 10px;
+  font-weight: 300;
+}
+.acquaintance-section__hand {
+  position: absolute;
+  right: 0;
+}
+.acquaintance-section__circle {
+  width: 250px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: var(--color-dark);
+  margin-left: 50%;
+}
+.acquaintance-section__nails {
+  position: absolute;
+  width: 150px;
+  transform: rotate(30deg);
+  bottom: 70px;
+  right: -20px;
+}
+.acquaintance-section__circle-text {
+  width: 250px;
+  height: 230px;
+  border-radius: 50%;
+  position: absolute;
+  left: 44%;
+}
+.acquaintance-section__circle-text span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0 0;
+  font-family: "Yeseva One", serif;
+  color: #B0B0B0;
+  font-size: 18px;
+  white-space: nowrap;
+  letter-spacing: 2px;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.acquaintance-section__contacts {
+  text-align: left;
+  position: absolute;
+  top: 220px;
+}
+.acquaintance-section__icon {
+  width: 20px;
+  margin: 5px 10px;
+}
+.acquaintance-section__item {
+  display: flex;
+  align-items: center;
+}
+.acquaintance-section__link {
+  text-decoration: none;
+  color: var(--color-light);
+  cursor: pointer;
+  font-size: 14px;
+}
+.acquaintance-section__metal {
+  width: 50px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: rotate(306deg);
+}
+.acquaintance-section__button {
+  position: absolute;
+  bottom: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 90%;
+  border: none;
+  background-color: #000000;
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+}
+.acquaintance-section__metal2 {
+  width: 130px;
+  position: absolute;
+  right: 230px;
+  bottom: 90px;
+  transform: rotate(45deg);
+}
+
+.gallery-section {
+  position: relative;
+  background: linear-gradient(#300000, #000000 80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-section__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: url(img/avatar.png) no-repeat;
+  background-size: 100px;
+  background-color: rgba(0, 0, 0, 0.7803921569);
+  box-shadow: 0 0 80px 40px #000000;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-section__metal-stars {
+  width: 60px;
+  box-shadow: 0;
+  position: relative;
+  bottom: 58px;
+  right: 50px;
+  z-index: 2;
+}
+.gallery-section__text {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 20px;
+  text-align: center;
+}
+.gallery-section__nails {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+  gap: 10px;
+  justify-items: center;
+}
+.gallery-section__nails-foto {
+  width: 100%;
+  /* height: 150px; */
+  border-radius: 10px;
+}
+.gallery-section__button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6156862745);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+}
+.gallery-section__hidden {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

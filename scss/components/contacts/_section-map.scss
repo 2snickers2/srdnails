@@ -1,0 +1,20 @@
+.section-map{
+    display: grid;
+    position: relative;
+    background: linear-gradient(var(--color-burgundy), var(--color-dark) 90%);
+
+    &__adress{
+    margin: 0 auto;
+    width: 90%;
+    height: 150px;
+    border-radius: 10px;
+    }
+    &__metal{
+    position: absolute;
+    width: 100px;
+    z-index: 1;
+    right: -20px;
+    transform: rotate(314deg);
+}
+
+}

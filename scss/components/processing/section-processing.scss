@@ -1,0 +1,47 @@
+.section-processing{
+    background: linear-gradient(var(--color-dark), var(--color-burgundy),var(--color-dark) 100%);
+
+    &__name{
+     font-family: "Yeseva One", serif;
+     font-size: 30px;
+     font-weight: 300;
+     text-align: center;
+     letter-spacing: 2px;
+    }
+    &__subtext{
+        margin: 30px 10px;
+        font-size: 14px;
+        text-align: justify;
+        
+    }
+    &__inform{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    &__inform-text{
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        padding: 0 5px;
+    }
+    &__inform-img{
+        width: 100px;
+        filter: drop-shadow(4px 40px 30px var(--color-dark));
+    }
+    &__inform-reverse{
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+    &__subtext-stars{
+        width: 50px;
+        position: relativa;
+        top: -30px;
+    }
+    &__stars-bottom{
+        width: 50px;
+        position: relative;
+        left: 70%;
+    }
+     
+}

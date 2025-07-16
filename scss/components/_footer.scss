@@ -1,0 +1,45 @@
+.footer{
+    background-color: var(--color-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+
+    &__logo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    }
+    &__img{
+        width: 50px;
+        border-radius: 50%;
+    }
+    &__adresses{
+        display: flex;
+        justify-content: space-between;
+        border-left: 1px solid var(--color-light);
+    }
+    &__name{
+
+        font-weight: 500;
+        margin-left: 10px;
+        
+    }
+    &__adresses-list{
+        display: flex;
+        list-style-type: none;
+    }
+    &__adresses-link{
+        cursor: pointer;
+    }
+    &__icon{
+        width: 20px;
+        margin-left: 10px;
+    }
+    &__copyright{
+        font-size: 10px;
+        color: #ffffff88;
+    }
+
+    }

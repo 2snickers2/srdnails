@@ -1,0 +1,65 @@
+.gallery-section{
+    position: relative;
+    background: linear-gradient(#300000, #000000 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__avatar{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: url(img/avatar.png) no-repeat;
+    background-size: 100px;
+    background-color: #000000c7;
+    box-shadow: 0 0 80px 40px#000000;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    }
+    &__metal-stars{
+        width: 60px;
+        box-shadow: 0;
+        position: relative;
+        bottom: 58px;
+        right: 50px;
+        z-index: 2;
+    }
+    &__text{
+        font-size: 24px;
+        font-weight: 400;
+        margin: 20px;text-align: center;
+    }
+    &__nails{
+        width: 100%;
+        aspect-ratio: 1 / 1; 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+        gap: 10px;
+        justify-items: center;
+    }
+    &__nails-foto{
+        width: 100%;
+        /* height: 150px; */
+        border-radius: 10px;
+    }
+    &__button{
+        background: none;
+        border: none;
+        font-size: 14px;
+        color: #ffffff9d;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        padding: 10px;
+        margin: 0 auto;
+        display: flex;
+        
+    }
+    &__hidden{
+        display: none;
+    }
+
+}

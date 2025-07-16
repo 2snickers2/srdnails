@@ -1,0 +1,109 @@
+.acquaintance-section{
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient( var(--color-dark), var(--color-burgundy) 30%);
+
+    &__name{
+    font-weight: 400;
+    margin-top: 20px;
+    }
+    &__inform{
+        margin: 10px;
+        font-weight: 300;
+    }
+    &__hand{
+        position: absolute;
+        right: 0;
+    }
+    &__circle{
+        width: 250px;
+        height: 230px;
+        border-radius: 50%;
+        background-color: var(--color-dark);
+        margin-left: 50%;
+    }
+
+    &__nails{
+        position: absolute;
+        width: 150px;
+        transform: rotate(30deg);
+        bottom: 70px;
+        right: -20px;
+    }
+    &__circle-text {
+        width: 250px;
+        height: 230px;
+        border-radius: 50%;
+        position: absolute;
+        left: 44%;
+    }
+
+    &__circle-text span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform-origin: 0 0;
+        font-family: "Yeseva One", serif;
+        color: #B0B0B0;
+        font-size: 18px;
+        white-space: nowrap;
+        letter-spacing: 2px;
+    }
+
+    @keyframes rotate {
+        100% {
+        transform: rotate(360deg);
+        }
+    }
+    &__contacts{
+        text-align: left;
+        position: absolute;
+        top: 220px;
+    }
+   &__icon{
+        width: 20px;
+        margin: 5px 10px;
+    }
+   &__item{
+        display: flex;
+        align-items: center;
+    }
+    &__link{
+        text-decoration: none;
+        color: var(--color-light);
+        cursor: pointer;
+        font-size: 14px;
+    }
+    &__metal{
+    width: 50px; 
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: rotate(306deg); 
+    }
+   &__button {
+        position: absolute;
+        bottom: 170px; 
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 90%;
+        border: none;
+        background-color: #000000;
+        color: #FFF;
+        font-family: 'Montserrat', sans-serif;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    &__metal2{
+        width: 130px;
+        position: absolute;
+        right: 230px;
+        bottom: 90px;
+        transform: rotate(45deg);
+
+    }
+    
+}
