@@ -52,12 +52,12 @@
     height: 20px;
     background: none;
     border: none;
-    background-image: url('../../img/menu-close.png');
+    background-image: url('../img/menu-close.png');
     background-size: contain;
     cursor: pointer;
 }
     &__close{
-    background: url('../../img/close-btn.png') no-repeat; 
+    background: url('../img/close-btn.png') no-repeat; 
     background-size: contain;
     /* background: none; */
     border: none;
