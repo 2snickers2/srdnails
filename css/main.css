@@ -3,12 +3,16 @@
   --color-light: #FFF;
   --color-dark: #000000;
   --color-burgundy: #300000;
+  --color-grey: #ffffff88;
+  --color-light-black:#000000b1;
 }
 
 body {
   color: var(--color-light);
   font-family: "Montserrat", sans-serif;
   height: 100%;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .container {
@@ -102,8 +106,7 @@ a {
   transform: translateY(0);
 }
 .header__nav-list {
-  list-style-type: none;
-  text-decoration: none; /* добавить в основной scss*/
+  /* добавить в основной scss*/
 }
 .header__button {
   width: 30px;
@@ -117,7 +120,6 @@ a {
 .header__close {
   background: url("../img/close-btn.png") no-repeat;
   background-size: contain;
-  /* background: none; */
   border: none;
   cursor: pointer;
   width: 30px;
@@ -176,7 +178,7 @@ a {
 }
 .footer__copyright {
   font-size: 10px;
-  color: rgba(255, 255, 255, 0.5333333333);
+  color: var(--color-grey);
 }
 
 .section-map {
@@ -202,6 +204,7 @@ a {
   overflow: hidden;
   position: relative;
   background: linear-gradient(var(--color-dark), var(--color-burgundy) 70%);
+  padding-top: 40px;
 }
 .section-contacts__metal {
   position: absolute;
@@ -221,7 +224,7 @@ a {
 .section-contacts {
   overflow: hidden;
   position: relative;
-  background: linear-gradient(#000000, #300000 70%);
+  background: linear-gradient(var(--color-dark), var(--color-burgundy) 70%);
 }
 
 .section-list {
@@ -258,7 +261,7 @@ a {
 }
 .section-prace__circle {
   background-size: 40px;
-  background-color: rgba(0, 0, 0, 0.6941176471);
+  background-color: var(--color-light-black);
   box-shadow: 0 0 40px 20px var(--color-dark);
   width: 40px;
   height: 40px;
@@ -456,7 +459,7 @@ a {
   top: 50%;
   transform-origin: 0 0;
   font-family: "Yeseva One", serif;
-  color: #B0B0B0;
+  color: var(--color-grey);
   font-size: 18px;
   white-space: nowrap;
   letter-spacing: 2px;
@@ -500,7 +503,7 @@ a {
   display: block;
   width: 90%;
   border: none;
-  background-color: #000000;
+  background-color: var(--color-dark);
   color: #FFF;
   font-family: "Montserrat", sans-serif;
   padding: 10px;
@@ -527,7 +530,7 @@ a {
   border-radius: 50%;
   background: url("../img/avatar.png") no-repeat;
   background-size: 100px;
-  background-color: rgba(0, 0, 0, 0.7803921569);
+  background-color: var(--color-light-black);
   box-shadow: 0 0 80px 40px var(--color-dark);
   margin: 0 auto;
   display: flex;
@@ -552,13 +555,12 @@ a {
   width: 100%;
   aspect-ratio: 1/1;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   justify-items: center;
 }
 .gallery-section__nails-foto {
   width: 100%;
-  /* height: 150px; */
   border-radius: 10px;
 }
 .gallery-section__button {
