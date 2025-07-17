@@ -110,12 +110,12 @@ a {
   height: 20px;
   background: none;
   border: none;
-  background-image: url(../../img/menu-close.png);
+  background-image: url("../../img/menu-close.png");
   background-size: contain;
   cursor: pointer;
 }
 .header__close {
-  background: url(../../img/close-btn.png) no-repeat;
+  background: url("../../img/close-btn.png") no-repeat;
   background-size: contain;
   /* background: none; */
   border: none;
@@ -516,7 +516,7 @@ a {
 
 .gallery-section {
   position: relative;
-  background: linear-gradient(#300000, #000000 80%);
+  background: linear-gradient(var(--color-burgundy), var(--color-dark) 80%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -525,10 +525,10 @@ a {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: url(../../img/avatar.png) no-repeat;
+  background: url("../../img/avatar.png") no-repeat;
   background-size: 100px;
   background-color: rgba(0, 0, 0, 0.7803921569);
-  box-shadow: 0 0 80px 40px #000000;
+  box-shadow: 0 0 80px 40px var(--color-dark);
   margin: 0 auto;
   display: flex;
   align-items: center;
