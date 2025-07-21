@@ -25,10 +25,11 @@
         align-items: center;
         padding: 0 5px;
     }
-    &__inform-img{
-        width: 100px;
-        filter: drop-shadow(4px 40px 30px var(--color-dark));
+     &__inform-img {
+    width: 100px;
+    filter: drop-shadow(4px 40px 30px var(--color-dark));
     }
+    
     &__inform-reverse{
         flex-direction: row-reverse;
         text-align: right;

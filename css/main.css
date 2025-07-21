@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --color-light: #FFF;
   --color-dark: #000000;
@@ -104,9 +103,6 @@ a {
   display: flex;
   opacity: 1;
   transform: translateY(0);
-}
-.header__nav-list {
-  /* добавить в основной scss*/
 }
 .header__button {
   width: 30px;
