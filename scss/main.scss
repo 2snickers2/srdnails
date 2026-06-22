@@ -1,12 +1,12 @@
-@import './utils/variables';
-@import './base';
+@use './utils/variables';
+@use './base';
 
-@import './components/header';
-@import './components/footer';
-@import './components/contacts/section-map';
-@import './components/contacts/section-contacts';
-@import './components/prace/section-prace';
-@import './components/processing/section-processing.scss';
-@import './components/materials/section-materials.scss';
-@import './components/acquaintance-section.scss';
-@import './components/galerry-section.scss';
+@use './components/header';
+@use './components/footer';
+@use './components/contacts/section-map';
+@use './components/contacts/section-contacts';
+@use './components/prace/section-prace';
+@use './components/processing/section-processing.scss';
+@use './components/materials/section-materials.scss';
+@use './components/acquaintance-section.scss';
+@use './components/galerry-section.scss';
