@@ -1,42 +1,49 @@
-.section-contacts{
+.section-contacts {
     overflow: hidden;
     position: relative;
     background: linear-gradient(var(--color-dark), var(--color-burgundy) 70%);
     padding-top: 40px;
+    min-height: 80vh;
 
-    &__metal{
-    position: absolute;
-    width: 100px;
-    z-index: 1;
-    right: -20px;
-    transform: rotate(314deg);
+    &__metal {
+        position: absolute;
+        width: 100px;
+        z-index: 1;
+        right: -20px;
+        transform: rotate(314deg);
+    }
 }
-}
-.section-name{
+
+.section-name {
     font-family: "Yeseva One", serif;
     font-weight: 500;
     margin-left: 10px;
     text-align: center;
 }
-.section-contacts{
+
+.section-contacts {
     overflow: hidden;
     position: relative;
     background: linear-gradient(var(--color-dark), var(--color-burgundy) 70%);
 }
-.section-list{
+
+.section-list {
     position: relative;
     padding: 20px;
 }
-.section-item{
+
+.section-item {
     display: flex;
     padding: 5px;
     align-items: center;
 }
-.section-link{
+
+.section-link {
     text-decoration: none;
     color: #FFF;
 }
-.section-icon{
+
+.section-icon {
     width: 25px;
     margin-right: 10px;
 }
